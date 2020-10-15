@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- template: ./scripts/testScript.ps1
+- template: ./scripts/testScript.yaml
   # displayName: 'step 1'
 
 - script: |
