@@ -6,20 +6,23 @@
 trigger:
 - main
 
-pool:
-  vmImage: 'ubuntu-latest'
+jobs:
+- job: dotnet_compilation
+  displayName: '.NET Core Compilation'
+  pool:
+    vmImage: 'ubuntu-latest'
 
-steps:
-- template: ./scripts/testScript.yaml
-  # displayName: 'step 1'
+  steps:
+  - template: ./scripts/testScript.yaml
+    # displayName: 'step 1'
 
-- script: |
-    echo Hello, world!
-    npm i
-  displayName: 'step 2'
-  
+  # - script: |
+  #     echo Hello, world!
+  #     npm i
+  #   displayName: 'step 2'
+    
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+  # - script: |
+  #     echo Add other tasks to build, test, and deploy your project.
+  #     echo See https://aka.ms/yaml
+  #   displayName: 'Run a multi-line script'
