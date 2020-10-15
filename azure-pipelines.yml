@@ -15,6 +15,7 @@ steps:
 
 - script: echo Hello, world!
   displayName: 'step 2'
+  npm i
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
