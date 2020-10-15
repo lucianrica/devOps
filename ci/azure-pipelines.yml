@@ -17,7 +17,7 @@ jobs:
     displayName: 'Run tests (individual .ps1 files)'
     inputs:
       targetType: Inline
-      script: ./scripts/build.ps1 -Bootstrap -Test
+      script: ./ci/scripts/build.ps1 -Bootstrap -Test
 
 
 # jobs:
