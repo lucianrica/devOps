@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world!
+- template: ./scripts/testScript.ps1
   displayName: 'step 1'
 
 - script: |
