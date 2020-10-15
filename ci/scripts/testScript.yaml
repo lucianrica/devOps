@@ -1,4 +1,4 @@
-- script: |
+script: |
     echo Hello, world!
     npm i
   displayName: 'step 2'
