@@ -6,7 +6,7 @@
 trigger:
 - main
 
-# name: "AAAAAAAA"
+name: ""
 
 jobs:
 - job: CookToast
