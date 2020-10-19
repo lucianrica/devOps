@@ -6,15 +6,12 @@
 trigger:
 - main
 
-
 resources:
   repositories:
     - repository: templates-repo    
       name: templates
       type: git
       ref: main
-
-
 
 jobs:
 - template: template.yaml@templates-repo
