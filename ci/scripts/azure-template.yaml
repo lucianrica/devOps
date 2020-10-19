@@ -2,3 +2,4 @@
 steps: 
 
     - script: echo "Hello from yaml template"
+    displayName: "template"
