@@ -1,0 +1,6 @@
+
+- script: |
+- script: |
+    echo Hello, world!
+    npm i
+  displayName: 'step template'
