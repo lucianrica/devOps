@@ -9,10 +9,10 @@ trigger:
 
 resources:
   repositories:
-    - respository: develop-repo
-      type: git
-      name: devOps
-      ref: develop
+  - respository: develop-repo
+    type: git
+    name: devOps
+    ref: develop
 
 
 
