@@ -6,7 +6,15 @@
 trigger:
 - main
 
-name: ""
+
+resources:
+  repositories:
+    - respository: develop-repo
+      type: git
+      name: devOps
+      ref: develop
+
+
 
 jobs:
 - job: CookToast
@@ -15,7 +23,7 @@ jobs:
     vmImage: 'VS2017-Win2016'
   steps:
     
-  - template: ./scripts/azure-template.yaml
+  - template: ./scripts/azure-template.yaml@develop-repo
 
 
 # name: ""
