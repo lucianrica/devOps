@@ -9,15 +9,15 @@ trigger:
 
 resources:
   repositories:
-  - repository: develop-repo    
-    name: lucianrica/devOps
+  - repository: templates-repo    
+    name: templates
     type: git
-    ref: develop
+    ref: main
 
 
 
 jobs:
-- template: develop-pipeline.yaml@develop-repo
+- template: template.yaml@templates-repo
 
 # - job: CookToast
 #   displayName: 'Cook Toast'
