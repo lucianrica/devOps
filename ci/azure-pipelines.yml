@@ -17,7 +17,7 @@ resources:
 
 
 jobs:
-- template: azure-template.yaml@develop-repo
+- template: develop-pipeline.yaml@develop-repo
 
 # - job: CookToast
 #   displayName: 'Cook Toast'
