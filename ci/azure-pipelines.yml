@@ -9,10 +9,10 @@ trigger:
 
 resources:
   repositories:
-  - repository: templates-repo    
-    name: templates
-    type: git
-    ref: main
+    - repository: templates-repo    
+      name: templates
+      type: git
+      ref: main
 
 
 
