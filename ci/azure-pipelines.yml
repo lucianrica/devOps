@@ -11,7 +11,7 @@ resources:
   repositories:
   - repository: develop-repo
     type: git
-    name: devOps
+    name: lucianrica/devOps
     ref: develop
 
 
