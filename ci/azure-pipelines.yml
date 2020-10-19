@@ -9,21 +9,23 @@ trigger:
 
 resources:
   repositories:
-  - repository: develop-repo
+  - repository: develop-repo    
+    name: lucianrica/devOps
     type: git
-    name: devOps
     ref: develop
 
 
 
 jobs:
-- job: CookToast
-  displayName: 'Cook Toast'
-  pool:
-    vmImage: 'VS2017-Win2016'
-  steps:
+- template: azure-template.yaml@develop-repo
+
+# - job: CookToast
+#   displayName: 'Cook Toast'
+#   pool:
+#     vmImage: 'VS2017-Win2016'
+#   steps:
     
-  - template: ci/scripts/azure-template.yaml@develop-repo
+#   - template: ci/scripts/azure-template.yaml@develop-repo
 
 
 # name: ""
