@@ -14,11 +14,22 @@ jobs:
   pool:
     vmImage: 'VS2017-Win2016'
   steps:
-  - task: PowerShell@2
-    displayName: 'Run tests (individual .ps1 files)'
-    inputs:
-      targetType: Inline
-      script: ./ci/scripts/build.ps1 -Bootstrap -Test
+  - template: ./ci/scripts/azure-template.yaml
+
+
+# name: ""
+
+# jobs:
+# - job: CookToast
+#   displayName: 'Cook Toast'
+#   pool:
+#     vmImage: 'VS2017-Win2016'
+#   steps:
+#   - task: PowerShell@2
+#     displayName: 'Run tests (individual .ps1 files)'
+#     inputs:
+#       targetType: Inline
+#       script: ./ci/scripts/build.ps1 -Bootstrap -Test
 
 
 # jobs:
