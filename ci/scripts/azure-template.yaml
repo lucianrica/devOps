@@ -1,6 +1,4 @@
 
-- script: |
-- script: |
-    echo Hello, world!
-    npm i
-  displayName: 'step template'
+steps: 
+
+    - script: echo "Hello from yaml template"
