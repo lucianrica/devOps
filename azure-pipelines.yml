@@ -7,23 +7,13 @@ trigger:
 - master
 
 pool:
-<<<<<<< HEAD
   vmImage: 'ubuntu-latest'
 
 container: mcr.microsoft.com/dotnet/core/sdk:3.0
 
 steps:
 - task: DotNetCoreCLI@2
-  inputs: 
-=======
-  vmImage: 'linux-latest'
-
-container: mcr.microsoft.com/dotnet/core/sdk:3.1
-
-steps:
-- task: DotNetCoreCLI@2
   inputs:
->>>>>>> cec94e2c161b9916c428b614eb6c079b144b03a7
     command: build
 
 - task: DotNetCoreCLI@2
