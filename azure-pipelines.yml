@@ -23,6 +23,9 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'publish'
-    publishTestResults: true
-    workingDirectory:
+    command: publish
+    publishWebProjects: false
+    projects: '**/*.csproj'
+    arguments: '-o $(Build.ArtifactStagingDirectory)/Output'
+    zipAfterPublish: true
+    modifyOutputPath: true
