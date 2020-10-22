@@ -1,6 +1,4 @@
-## build 
-[![Build Status](https://dev.azure.com/lucianrica/office%20games/_apis/build/status/a/UI?branchName=main)](https://dev.azure.com/lucianrica/office%20games/_build/latest?definitionId=1&branchName=main)
+# hello-pipelines
+Simple set of .Net Core 3.0 projects used to try out Azure Pipelines concepts.
 
-# devOps
-
-<img src="https://dev.azure.com/lucianrica/office%20games/_apis/build/status/a/UI?branchName=main">
+[![Build Status](https://dev.azure.com/julioc0382/hello-pipelines/_apis/build/status/julioct.hello-pipelines?branchName=master)](https://dev.azure.com/julioc0382/hello-pipelines/_build/latest?definitionId=1&branchName=master)
